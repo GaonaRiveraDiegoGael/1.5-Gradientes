@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad Gradientes CSS</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            width: 33%;
+            height: 150px;
+            text-align: center;
+            vertical-align: middle;
+            color: white;
+            font-weight: bold;
+            border: 1px solid black;
+        }
+        /* Define CSS gradients for each cell */
+        .horizontal {
+            background: linear-gradient(to right, red, yellow);
+        }
+        .diagonal {
+            background: linear-gradient(to bottom right, purple, pink);
+        }
+        .vertical {
+            background: linear-gradient(to bottom, cyan, green);
+        }
+        .repetido {
+            background: repeating-linear-gradient(45deg, red, yellow 10%, blue 20%);
+        }
+        .radial {
+            background: radial-gradient(circle, orange, yellow, black);
+        }
+        .multiple {
+            background: linear-gradient(to right, red, transparent 50%), radial-gradient(circle, white, blue);
+        }
+        .conico {
+            background: conic-gradient(red, green, blue);
+        }
+        .elipse {
+            background: radial-gradient(ellipse, green, transparent 60%);
+        }
+        .metalico {
+            background: radial-gradient(circle, silver, gray, black);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">ITGAM<br>Diseño de aplicaciones Web<br>Actividad Gradientes CSS</h1>
+    <p><strong>Nombre del estudiante:</strong> [Gaona Rivera Diego Gael] <br><strong>Número de control:</strong> [201130364]</p>
+    <table>
+        <tr>
+            <td class="horizontal">Gradiente Horizontal</td>
+            <td class="diagonal">Gradiente Diagonal</td>
+            <td class="vertical">Gradiente Vertical</td>
+        </tr>
+        <tr>
+            <td class="repetido">Repetido</td>
+            <td class="multiple">Gradientes Múltiples</td>
+            <td class="metalico">Gradiente Metálico</td>
+        </tr>
+        <tr>
+            <td class="radial">Radial</td>
+            <td class="elipse">Elíptico</td>
+            <td class="conico">Cónico</td>
+        </tr>
+    </table>
+</body>
+</html>
